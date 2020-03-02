@@ -5,16 +5,25 @@ var bedrijf = {
     straatnummer: 1,
     postcode: 3000,
     gemeente:'Leuven',
-    btwnummer: 'BE0999999999',
+    landCode: 'be',
+    btwnummer: 8917348761,
     btwplichtig: true,
     websiteadre:'www.itenzo.be',
     mailadre:'vsa.markjohn@gmail.com',
     };
+
     function getBedrijfNaam(){
-        document.getElementById("Opdract1Result").innerHTML = `${bedrijf.bedrijfsnaam} 
+        document.getElementById("Opdract1Result").innerHTML = 
+        `${bedrijf.bedrijfsnaam} <br>
         ${bedrijf.straatnaam} 
         ${bedrijf.straatnummer} 
         ${bedrijf.postcode} 
-        ${bedrijf.gemeente}`
+        ${bedrijf.gemeente}<br>
+        BTW-Nummer: ${bedrijf.landCode.toUpperCase()}${bedrijf.btwnummer}`
     }
     getBedrijfNaam();
+
+  
+
+   
+
