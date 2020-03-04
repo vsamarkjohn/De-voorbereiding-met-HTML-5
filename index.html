@@ -3,14 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/toastr.min.css">
     <title>Online Academy van VSA</title>
 </head>
 <body>
     <p id="toonDate"></p>
     <h1>Welkom bij de Academy van VSA</h1>
     <p id="Opdract1Result"></p>
-
-    <script type="text/javascript"src="mainscript.js"></script>
+     <fieldset>
+         <legend>BTW-nummer</legend>
+         <form>
+         <label for="uwLand">Kies uw land:</label>
+         <select id="europeLand" onchange="getValue()" >
+            <option value="BE">BE</option>
+            <option value="Osterijk">Oesterijk</option>
+          </select><br><br>
+         <label for="toonBTW-Nummer">BTW-nummer:</label>
+            <input type="text" id="btw-nummer">
+            <p id="viewResult"></p>
+        </form>
+         <hr><form>
+         <p id="resultaat-BTE-Nummer"></p>
+         <label for="toonBTW-Nummer">BTW-nummer:</label>
+        </form>
+     </fieldset>
+     <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="/js/mainscript.js"></script>
+    <script type="text/javascript" src="/js/toastr.min.js"></script>
 </body>
 </html>
 
